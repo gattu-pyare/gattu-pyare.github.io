@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer site</title>
+    <style>
+        * {
+            color: rgba(255, 255, 255, 0.89);
+           
+        }
+        
+        .mainbody{
+            background: url("computer.webp");
+            display: block;
+            margin: 20px 20px;
+            height: 3444px;
+           
+
+        }
+
+        .left {
+            font-weight: bold;
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 9px;
+            /* border: 5px solid red; */
+            box-sizing: border-box;
+            width: 120px;
+
+        }
+        .left img {
+            filter: invert(100%);
+            width: 40px;
+            display: inline-block;
+        }
+        .left div{
+            display: inline-block ;
+            margin: 0px 0px;
+            padding-top: 10px;
+            width: 20px;
+            font-size: 20px;
+            
+        }
+
+        .mid {
+            
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            /* border: 5px solid yellow; */
+            
+        }
+        .mid a{
+            padding: 4px 31px;
+            font-size: 26px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .right {
+            /* border: solid 5px goldenrod; */
+            position: absolute;
+            top: 18px;
+            display: inline-block;
+            right: 20px;
+            padding: 6px;
+        }
+        .right button{
+            cursor: pointer;
+            display: block;
+            background-color:  rgb(105, 105, 241) ;
+            color: black;
+            border: 2px solid rgb(0, 0, 0);    
+            margin: 0px 0px 5px 72px;
+            font-size: 23px;
+            font-weight: bold;
+        }
+        .right input{
+            cursor: pointer;
+            display: block;
+            width: 172px;
+            border: 2px solid rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color: teal;
+        }
+/* -----------------this was done by position -------------------- */
+
+
+/* -----------Now we use flex box and design a body -------------------- */
+        .content{
+            
+            border: 5px solid blue;
+            margin: 20px 0px 0px 0px;
+            height: 450px;
+            display: flex;
+            box-sizing: border-box;
+        }
+        .box{
+            margin: 2px 5px;
+            border: 2px solid red;
+            padding: 12px 23px;
+            width:200;
+            height: 200;
+        }
+
+    </style>
+</head>
+
+<body class="mainbody">
+
+    <head>
+
+        <div class="left">
+            <img src="logo.jpg" alt="My_logo">
+            <div><strong> Eagle Centre</strong>       </div>
+        </div>
+        <!-- -------------------------------------- -->
+              
+        <div class="mid" class="navbar">
+           
+            <a href="#">Home</a>
+            <a href="#">Laptops</a>
+            <a href="#">Computer</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <!-- -------------------- -->
+        
+        <div class="right">
+            
+            <button class="btn">Login In</button>
+            <input type="text" placeholder="Search this site">
+
+        </div>
+
+    </head>
+<!-- coding of Head was done by position  -->
+
+    <hr>
+    <p>From here i will start the content</p>
+    <div class="content">
+
+
+        <div class="box" id="box1">
+            <h1>LAptops</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam pariatur architecto mollitia laudantium culpa voluptas reiciendis repellat, laboriosam ea, optio libero adipisci repellendus hic sunt consequuntur quas doloremque? Incidunt doloremque dolor saepe nostrum quidem!</p>
+        </div>
+        <div class="box" id="box2">
+            <h1>Computers</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam pariatur architecto mollitia laudantium culpa voluptas reiciendis repellat, laboriosam ea, optio libero adipisci repellendus hic sunt consequuntur quas doloremque? Incidunt doloremque dolor saepe nostrum quidem!</p>
+        </div>
+        <div class="box" id="box3">
+            <h1>TAblets</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam pariatur architecto mollitia laudantium culpa voluptas reiciendis repellat, laboriosam ea, optio libero adipisci repellendus hic sunt consequuntur quas doloremque? Incidunt doloremque dolor saepe nostrum quidem!</p>
+        </div>
+        <div class="box" id="box4">
+            <h1>Repair Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam pariatur architecto mollitia laudantium culpa voluptas reiciendis repellat, laboriosam ea, optio libero adipisci repellendus hic sunt consequuntur quas doloremque? Incidunt doloremque dolor saepe nostrum quidem!</p>
+        </div>
+        
+    
+
+    </div>
+
+
+
+</body>
+
+</html>
